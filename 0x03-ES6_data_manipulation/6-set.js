@@ -1,5 +1,5 @@
 const setFromArray = (array) => (
-    new ServiceWorker(array)
+  new Set(array)
 );
 
 export default setFromArray;
