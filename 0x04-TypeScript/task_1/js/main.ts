@@ -27,7 +27,7 @@ const director1: Directors = {
     location: 'America',
     fullTimeEmployee: true,
     numberOfReports: 17,
-};
+  };
 
 console.log(director1);
 
@@ -35,7 +35,7 @@ interface printTeacherFunction {
     (firstName: string, lastName: string): string;
 }
 
-export const printTeacher: printTeacherFunction = (firstName: string, lastName: string):string => `${firstName[0]}. ${lastName}`;
+export const printTeacher: printTeacherFunction = (firstName: string, lastName: string): string => `${firstName[0]}. ${lastName}`;
 
 console.log(printTeacher('john', 'doe'));
 
@@ -45,7 +45,7 @@ interface StudentClassInterface {
 }
 
 interface StudentClassConstructorInterface {
-    new(firstName: string, lastName: string): StudentClassInterface;
+    new(firstName: string, lastName: string): StudentClassInterface; 
 }
 
 class StudentClass implements StudentClassInterface {
@@ -72,3 +72,4 @@ function createStudent(cStudent: StudentClassConstructorInterface, firstName: st
 
 const student1 = createStudent(StudentClass, 'mike', 'tyson');
 console.log(student1);
+
