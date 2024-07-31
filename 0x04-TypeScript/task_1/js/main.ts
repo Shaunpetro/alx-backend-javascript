@@ -3,7 +3,7 @@ interface Teacher {
     readonly lastName: string;
     fullTimeEmployee: boolean;
     location: string;
-    yearsOfExperience: number;
+    yearsOfExperience?: number;
     [key: string]: any
 }
 
@@ -45,7 +45,7 @@ interface StudentClassInterface {
 }
 
 interface StudentClassConstructorInterface {
-    new(firstName: string. lastName: string): StudentClassInterface;
+    new(firstName: string, lastName: string): StudentClassInterface;
 }
 
 class StudentClass implements StudentClassInterface {
