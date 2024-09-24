@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "8-api": "file:",
     "express": "^4.17.1"
   },
   "devDependencies": {
